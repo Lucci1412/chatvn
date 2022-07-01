@@ -1,0 +1,188 @@
+
+.auth_page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2d88ff;
+    position: relative;
+}
+
+.auth {
+
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.user {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.login_left {
+    position: relative;
+    transition: 0.5s;
+    width: 50%;
+    height: 100%;
+}
+
+.login_left_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.auth_form {
+    position: relative;
+    flex:1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+    width: 100%;
+}
+
+.auth_form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14;
+    color: #555;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    border-radius: 2px;
+}
+
+.auth_form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #2e74e9;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+}
+
+.login_text {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+
+.login_text a {
+    text-decoration: none;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.login_text a:hover {
+    text-decoration: none;
+    color: #555;
+
+}
+
+
+
+
+
+.auth .signup {
+    pointer-events: none;
+}
+
+.auth.active .signup {
+    pointer-events: initial
+}
+
+
+
+.auth .signup .auth_form {
+    top: 100%;
+}
+
+.signup .login_left {
+    top: -100%;
+}
+
+.auth.active .signup .auth_form {
+    top: 0%;
+}
+
+.auth.active .signup .login_left {
+    top: 0%;
+}
+
+
+
+ .auth .login .auth_form {
+    top: 0;
+}
+
+
+.auth.active .login .auth_form {
+    top: 100%;
+}
+
+ .auth.active .login .login_left {
+    top: -100%;
+} 
+.auth .login .login_left {
+    top: 0;
+}
+.submit_login_icon{
+    padding: 0;
+}
+
+@media (max-width:1023px){
+    .login_left{
+        display: none;
+    }
+    .auth{
+        max-width: 400px;
+    }
+    .auth_form{
+        width: 100%;
+    }
+    .user{
+        width: 100%;
+    }
+    /* .auth_form input{
+        width: 100%;
+    } */
+}

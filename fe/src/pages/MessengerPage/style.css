@@ -1,0 +1,93 @@
+.messenger_page {
+  display: flex;
+  padding-top: 30px;
+}
+.messenger_page_left {
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
+  height: calc(100vh-66px);
+  position: sticky;
+  top: 66px;
+  flex: 1;
+  border-radius: 8px 0 0 8px;
+  height: calc(100vh - 96px);
+  overflow: scroll;
+}
+.mess_page_no_chat {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+.messenger_page_right_list_mess{
+  display:none
+}
+.messenger_page_left::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messenger_page_left::-webkit-scrollbar-track {
+  background-color: var(--input-color);
+}
+
+.messenger_page_left::-webkit-scrollbar-thumb {
+  background: var(--input-hover-color);
+  border-radius: 8px;
+}
+.messenger_page_name {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.messenger_page_right {
+  flex: 2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .messenger_page_left {
+    display: none;
+  }
+  .messenger_page {
+    padding-top: 0;
+  }
+  .messenger_page_right_list_mess{
+    display:block
+  }
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .messenger_page_left {
+    display: none;
+  }
+  .messenger_page {
+    padding-top: 0;
+  }
+  .messenger_page_right_list_mess{
+    display:block
+  }
+}
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+  .messenger_page_left {
+    display: none;
+  }
+  .messenger_page {
+    padding-top: 0;
+  }
+  .messenger_page_right_list_mess{
+    display:block
+  }
+}

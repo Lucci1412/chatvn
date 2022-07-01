@@ -1,0 +1,30 @@
+.connect_people_item{
+display:flex;
+align-items: center;
+padding: 10px 30px;
+}
+.connect_people_item:hover{
+    background:var(--input-color)
+}
+.connect_people_item img{
+
+}
+.connect_people_info{
+    display:flex;
+    flex-direction:column;
+    padding-left: 12px;
+    padding-right: 20px;
+    flex: 1;
+}
+.connect_people_info_widget{
+    display:flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+.connect_people_info_widget span{
+    padding: 0;
+}
+.connect_people_item_button{
+    margin: 0 !important; 
+}

@@ -1,0 +1,26 @@
+.search_people_item {
+  display: flex;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.search_people_item:hover {
+  background: var(--input-color);
+}
+.search_people_item img {
+  width: 66px;
+  height: 66px;
+}
+.search_people_item_info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin: auto;
+  margin-left: 0px;
+}
+.search_people_item_info span {
+  padding-left: 0;
+}

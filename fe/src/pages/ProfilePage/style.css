@@ -1,0 +1,32 @@
+.profile_page{
+    display:flex;
+    margin-top: 30px;
+}
+
+    
+    /*  Tablets in portrait mode, large display smartphones landscape mode */
+    
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .profile_page{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+    
+    /*  Smartphones in landscape mode */
+    
+    @media only screen and (min-width: 421px) and (max-width: 767px) {
+        .profile_page{
+            display:flex;
+            flex-direction:column;
+        }
+    }
+    
+    /*  Smartphones in portrait mode  */
+    
+    @media only screen and (max-width: 420px) {
+        .profile_page{
+            display:flex;
+            flex-direction:column;
+        }
+    }

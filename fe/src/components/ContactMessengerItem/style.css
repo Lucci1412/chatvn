@@ -1,0 +1,146 @@
+.contact_messenger_item {
+  display: flex;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact_messenger_item:hover,
+.contact_messenger_item_active {
+  background-color: var(--input-color);
+}
+
+.contact_messenger_online,
+.contact_messenger_offline {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  position: absolute;
+  left: 36px;
+  bottom: 7px;
+  border: 2px solid var(--white-color);
+}
+
+.contact_messenger_offline {
+  background-color: red;
+}
+.contact_messenger_online {
+  background-color: green;
+}
+
+.contact_messenger_info span {
+  text-align: initial;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+.contact_messenger_info p,
+.contact_messenger_info p {
+  font-size: 11px;
+  font-weight: 500;
+  color: grey;
+  text-align: left;
+  margin-left: 10px;
+}
+.mobile_contact_messenger_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile_contact_messenger_info span {
+  height: 14px * 1.3 * 3;
+  font-size: 16px;
+  line-height: 1.3;
+  -webkit-line-clamp: 2; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+/* mobile */
+.mobile_contact_messenger_item {
+  margin: 10px;
+  display: flex;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  max-width: 65px;
+  flex-direction: column;
+  display: none;
+}
+.mobile_contact_messenger_img {
+  position: relative;
+}
+.mobile_contact_messenger_online,
+.mobile_contact_messenger_offline {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  position: absolute;
+  right: 14px;
+  bottom: 1px;
+  border: 2px solid var(--white-color);
+}
+
+.mobile_contact_messenger_offline {
+  background-color: red;
+}
+.mobile_contact_messenger_online {
+  background-color: green;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact_messenger_item:hover,
+  .contact_messenger_item_active {
+    background-color: transparent;
+  }
+  .contact_messenger_item {
+    display: none;
+  }
+  .mobile_contact_messenger_item {
+    display: block;
+  }
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .contact_messenger_item:hover,
+  .contact_messenger_item_active {
+    background-color: transparent;
+  }
+  .contact_messenger_item {
+    display: none;
+  }
+  .mobile_contact_messenger_item {
+    display: block;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+  .contact_messenger_item:hover,
+  .contact_messenger_item_active {
+    background-color: transparent;
+  }
+  .contact_messenger_item {
+    display: none;
+  }
+  .mobile_contact_messenger_item {
+    display: block;
+  }
+}

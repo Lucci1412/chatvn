@@ -1,0 +1,74 @@
+.post_detail_page {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--white-color);
+}
+.post_detail_img {
+  position: relative;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 1);
+}
+.post_detail_img img {
+  object-fit: cover;
+}
+.post_detail_img_icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.post_detail_img_icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.post_detail {
+  height: 100vh;
+  overflow-y: scroll;
+  background: var(--white-color);
+  flex: 1;
+}
+.post_detail::-webkit-scrollbar {
+  width: 8px;
+}
+
+.post_detail::-webkit-scrollbar-track {
+  background-color: var(--input-color);
+}
+
+.post_detail::-webkit-scrollbar-thumb {
+  background: var(--input-hover-color);
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .post_detail {
+    display: none;
+  }
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .post_detail {
+    display: none;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+  .post_detail {
+    display: none;
+  }
+}

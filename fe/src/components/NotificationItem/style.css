@@ -1,0 +1,69 @@
+.notification_item {
+  display: flex;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.notification_item:hover {
+  background-color: var(--input-color);
+}
+.notification_info {
+  text-decoration: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.notification_info_active {
+  text-decoration: none;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 15px;
+  
+}
+.notification_info p {
+  max-width: 400px;
+  height: 14px * 2; /* Fallback for non-webkit */
+  font-size: 14px;
+  word-break: break-word;
+  color: black;
+}
+.notification_info_active p{
+  color: grey;
+}
+.notification_info h6 {
+  font-size: 14px;
+  color: var(--blue-color);
+  font-weight: 400;
+  margin: 0;
+  align-self: flex-start;
+  padding-left: 9px;
+}
+.notification_info_active h6 {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+  margin: 0;
+  align-self: flex-start;
+  padding-left: 9px;
+}
+.notification_delete {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.notification_delete:hover {
+  background: var(--input-hover-color);
+}

@@ -1,0 +1,74 @@
+.contact_messenger_list {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+  padding-bottom: 6px;
+}
+.contact_messenger_list_mobile {
+  display: none;
+  padding-left: 0;
+  background: var(--white-color);
+  overflow: hidden;
+  max-width: 100vw;
+  margin:0;
+  min-height:65px;
+  max-height: 86px;
+}
+.contact_messenger_list_mobile_wrapper {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin-bottom: -20px;
+}
+.contact_messenger_list_mobile_wrapper::-webkit-scrollbar {
+  width: 1px;
+}
+
+.contact_messenger_list_mobile_wrapper::-webkit-scrollbar-track {
+  background-color: var(--input-color);
+}
+
+.contact_messenger_list_mobile_wrapper::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 1px;
+}
+
+.list_mess_empty {
+  min-height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact_messenger_list_mobile {
+    display: block;
+  }
+  .contact_messenger_list {
+    display: none;
+  }
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .contact_messenger_list_mobile {
+    display: block;
+  }
+  .contact_messenger_list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .contact_messenger_list_mobile {
+    display: block;
+  }
+  .contact_messenger_list {
+    display: none;
+  }
+}

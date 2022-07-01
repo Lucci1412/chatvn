@@ -1,0 +1,138 @@
+.home_share {
+  margin-top: 30px;
+  background-color: var(--white-color);
+  border: 1px solid var(--input-color);
+  border-radius: 8px;
+  display: flex;
+}
+.home_share_form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_share_nav {
+  border-right: 1px solid var(--border-color);
+}
+.home_share_nav img {
+  margin: 20px;
+}
+
+.home_share_container {
+  padding: 0 30px;
+  margin-top: 20px;
+}
+.home_share_textarea {
+  width: calc(100% - 15px);
+  text-indent: 20px;
+  font-size: 16px;
+  border: none;
+  font-size: 14px;
+}
+
+.home_share_textarea:focus {
+  outline: none;
+}
+.home_share_wrapper {
+  max-height: 400px;
+  overflow-y: scroll;
+  width: calc(100% - 18px);
+  position: relative;
+}
+
+.home_share_wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home_share_wrapper::-webkit-scrollbar-track {
+  background-color: var(--input-color);
+}
+
+.home_share_wrapper::-webkit-scrollbar-thumb {
+  background: var(--input-hover-color);
+  border-radius: 8px;
+}
+.home_share_container_img {
+  position: relative;
+  margin-top: 20px;
+}
+.home_share_container_img img {
+  width: calc(100%);
+}
+.home_share_img_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.home_share_widget {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+.home_share_widget_list {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+.home_share_widget_item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px 30px;
+  border-radius: 8px;
+}
+.home_share_widget_item:hover {
+  background: var(--input-hover-color);
+}
+.home_share_widget_item span {
+  padding-left: 10px;
+}
+.home_share_button:disabled,
+.home_share_button[disabled] {
+  background: #9eace4;
+  cursor: not-allowed;
+}
+
+.home_share_button_disabled:hover {
+  background: #9eace4;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ 
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  
+  .home_share_nav {
+    display: none;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+  .home_share_widget_item_mood {
+    display: none;
+  }
+  .home_share_nav {
+    display: none;
+  }
+  .home_share_widget_list {
+    margin-left: 0;
+  }
+  .home_share_widget_item {
+    padding: 8px 10;
+  }
+  .home_share_container {
+    padding: 0;
+}
+}

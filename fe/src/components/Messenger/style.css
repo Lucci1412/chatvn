@@ -1,0 +1,57 @@
+.messenger {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 0;
+}
+.messenger_top {
+  display: flex;
+}
+.messenger_top img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+.messenger_top_text {
+  background-color: #e4e6eb;
+  padding: 8px 10px;
+  border-radius: 20px;
+  color: #111;
+  margin-left: 10px;
+  max-width: 170px;
+  word-wrap: break-word;
+}
+.messenger_top_text_page {
+  /* flex: 1; */
+  background-color: #e4e6eb;
+  padding: 8px 10px;
+  border-radius: 20px;
+  color: #111;
+  margin-left: 10px;
+  max-width: 500px;
+  word-wrap: break-word;
+}
+.messenger_time {
+  color: grey;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+/* own */
+.messenger.own {
+  align-items: flex-end;
+}
+.messenger.own .messenger_top_text,.messenger.own .messenger_top_text_page {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  /* padding: 0; */
+  margin-right: 10px;
+}
+.messenger.own .messenger_time {
+  width: 100%;
+}

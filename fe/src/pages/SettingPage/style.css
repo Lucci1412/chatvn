@@ -1,0 +1,117 @@
+.setting_page {
+  margin-top: 30px;
+  display: flex;
+}
+.setting_info {
+  flex: 2;
+  border-radius: 12px;
+  min-height: 450px;
+  background: var(--white-color);
+  margin-right: 30px;
+}
+.setting_avatar {
+  background: var(--white-color);
+  flex: 1;
+  border-radius: 12px;
+  background: (--white-color);
+  max-height: 250px;
+}
+.setting_form {
+  padding: 30px;
+}
+.setting_info_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.setting_info_item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black-light-color);
+  padding: 0;
+}
+.setting_info_item input {
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-top: 6px;
+}
+.setting_info_item input:focus {
+  outline: none;
+}
+.setting_avatar_main {
+  padding: 15px;
+  display: flex;
+}
+.setting_avatar_main img {
+  width: 100px;
+  height: 100px;
+}
+.setting_avatar_input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.setting_avatar hr {
+  margin: 20px 0;
+}
+.setting_avatar span {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--black-light-color);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .setting_info {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .setting_avatar {
+    flex: 1;
+  }
+  .setting_form {
+    padding: 10px;
+  }
+}
+
+/*  Smartphones in landscape mode */
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .setting_page {
+    flex-direction: column;
+  }
+  .setting_avatar {
+    margin-top: 30px;
+  }
+  .setting_info {
+    margin-right: 0;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+
+@media only screen and (max-width: 420px) {
+  .setting_page {
+    flex-direction: column;
+  }
+  .setting_avatar {
+    margin-top: 30px;
+  }
+  .setting_info {
+    margin-right: 0;
+  }
+  .setting_avatar .setting_form {
+    padding: 0;
+  }
+  .setting_form span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .setting_avatar_main{
+    padding:0;
+  }
+}
